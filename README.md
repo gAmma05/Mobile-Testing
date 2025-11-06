@@ -71,14 +71,23 @@ adb devices
 
 If no devices is running, you have to run a device in Android Studio (16.0 or higher is required)
 
-6. Run the tests
+6. Build the app in Android Studio
+- In Android Studio, on the tab at the top, choose Build, choose "Generate app bundles or APKs", choose "Generate APK"
+- Copy the path where the app_debug.apk is placed
+
+7. Install the app because you don't want it to install the app again
+```bash
+adb install "YOUR_APP_DEBUG_APK_PATH"
+```
+
+8. Run the tests
 ```bash
 #In VSC, where the current directory is codeceptjs
 npx codeceptjs run --steps
 
 ```
 
-7. (Optional) You can delete appium server if you no longer use that
+8. (Optional) You can delete appium server if you no longer use that
 ```bash
 npm uninstall -g appium
 ```
