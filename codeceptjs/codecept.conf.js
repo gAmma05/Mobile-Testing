@@ -16,7 +16,7 @@ exports.config = {
         'platformName': 'Android',
         'appium:automationName': 'UiAutomator2',
         'appium:deviceName': 'emulator-5554',
-        'appium:noReset": true,
+        'appium:noReset': true,
         'appium:appPackage': 'com.example.datetimevalidator',
         'appium:appActivity': '.MainActivity',
         'appium:newCommandTimeout': 300
